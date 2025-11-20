@@ -4,7 +4,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/JohannesKaufmann/html-to-markdown/v2/converter"
+	"github.com/lintstar/html-to-markdown/v2/converter"
 	"golang.org/x/net/html"
 )
 

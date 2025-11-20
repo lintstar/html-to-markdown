@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	htmltomarkdown "github.com/JohannesKaufmann/html-to-markdown/v2"
+	htmltomarkdown "github.com/lintstar/html-to-markdown/v2"
 )
 
 func main() {

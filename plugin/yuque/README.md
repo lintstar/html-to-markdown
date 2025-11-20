@@ -13,6 +13,7 @@
 ## 安装
 
 ```bash
+# 直接安装带语雀插件的版本
 go get github.com/lintstar/html-to-markdown/v2@main
 ```
 
@@ -27,6 +28,7 @@ import (
     "fmt"
     "log"
     
+    // 使用 lintstar 的 fork（包含语雀插件）
     "github.com/lintstar/html-to-markdown/v2/converter"
     "github.com/lintstar/html-to-markdown/v2/plugin/base"
     "github.com/lintstar/html-to-markdown/v2/plugin/commonmark"

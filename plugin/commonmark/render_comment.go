@@ -1,8 +1,8 @@
 package commonmark
 
 import (
-	"github.com/JohannesKaufmann/html-to-markdown/v2/converter"
-	"github.com/JohannesKaufmann/html-to-markdown/v2/internal/domutils"
+	"github.com/lintstar/html-to-markdown/v2/converter"
+	"github.com/lintstar/html-to-markdown/v2/internal/domutils"
 	"golang.org/x/net/html"
 )
 

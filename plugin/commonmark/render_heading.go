@@ -5,9 +5,9 @@ import (
 	"regexp"
 
 	"github.com/JohannesKaufmann/dom"
-	"github.com/JohannesKaufmann/html-to-markdown/v2/converter"
-	"github.com/JohannesKaufmann/html-to-markdown/v2/internal/textutils"
-	"github.com/JohannesKaufmann/html-to-markdown/v2/marker"
+	"github.com/lintstar/html-to-markdown/v2/converter"
+	"github.com/lintstar/html-to-markdown/v2/internal/textutils"
+	"github.com/lintstar/html-to-markdown/v2/marker"
 	"golang.org/x/net/html"
 )
 

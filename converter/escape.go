@@ -3,7 +3,7 @@ package converter
 import (
 	"unicode/utf8"
 
-	"github.com/JohannesKaufmann/html-to-markdown/v2/marker"
+	"github.com/lintstar/html-to-markdown/v2/marker"
 )
 
 const (
