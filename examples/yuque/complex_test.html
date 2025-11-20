@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>语雀编辑器完整测试</title>
+</head>
+<body>
+    <h1>完整的语雀文档测试</h1>
+    
+    <h2>1. 多种语言代码块测试</h2>
+    
+    <h3>1.1 JavaScript 代码</h3>
+    <card
+        type="inline"
+        name="codeblock"
+        value="data:%7B%22mode%22%3A%22javascript%22%2C%22code%22%3A%22function%20fibonacci(n)%20%7B%5Cn%20%20if%20(n%20%3C%3D%201)%20return%20n%3B%5Cn%20%20return%20fibonacci(n%20-%201)%20%2B%20fibonacci(n%20-%202)%3B%5Cn%7D%5Cn%5Cnconsole.log(fibonacci(10))%3B%22%7D"
+    ></card>
+    
+    <h3>1.2 Go 代码</h3>
+    <card
+        type="inline"
+        name="codeblock"
+        value="data:%7B%22mode%22%3A%22go%22%2C%22code%22%3A%22package%20main%5Cn%5Cnimport%20%5C%22fmt%5C%22%5Cn%5Cnfunc%20main()%20%7B%5Cn%20%20%20%20fmt.Println(%5C%22Hello%2C%20World!%5C%22)%5Cn%7D%22%7D"
+    ></card>
+    
+    <h3>1.3 SQL 代码</h3>
+    <card
+        type="inline"
+        name="codeblock"
+        value="data:%7B%22mode%22%3A%22sql%22%2C%22code%22%3A%22SELECT%20*%20FROM%20users%5CnWHERE%20age%20%3E%2018%5CnORDER%20BY%20created_at%20DESC%5CnLIMIT%2010%3B%22%7D"
+    ></card>
+    
+    <h3>1.4 Shell 脚本</h3>
+    <card
+        type="inline"
+        name="codeblock"
+        value="data:%7B%22mode%22%3A%22bash%22%2C%22code%22%3A%22%23!%2Fbin%2Fbash%5Cn%5Cnecho%20%5C%22Starting%20deployment...%5C%22%5Cn%5Cnfor%20i%20in%20%7B1..5%7D%3B%20do%5Cn%20%20echo%20%5C%22Step%20%24i%5C%22%5Cn%20%20sleep%201%5Cndone%5Cn%5Cnecho%20%5C%22Deployment%20complete!%5C%22%22%7D"
+    ></card>
+    
+    <h2>2. 图片测试</h2>
+    
+    <h3>2.1 带标题的图片</h3>
+    <p>
+        <card
+            type="inline"
+            name="image"
+            value="data:%7B%22src%22%3A%22https%3A//example.com/images/architecture.png%22%2C%22title%22%3A%22%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%9B%BE%22%2C%22width%22%3A800%2C%22height%22%3A600%7D"
+        ></card>
+    </p>
+    
+    <h3>2.2 无标题的图片</h3>
+    <p>
+        <card
+            type="inline"
+            name="image"
+            value="data:%7B%22src%22%3A%22https%3A//example.com/images/logo.svg%22%2C%22title%22%3A%22%22%2C%22width%22%3A200%2C%22height%22%3A100%7D"
+        ></card>
+    </p>
+    
+    <h2>3. 混合内容测试</h2>
+    
+    <p>这段文字包含<strong>加粗</strong>、<em>斜体</em>和<code>行内代码</code>。下面是一个代码示例：</p>
+    
+    <card
+        type="inline"
+        name="codeblock"
+        value="data:%7B%22mode%22%3A%22typescript%22%2C%22code%22%3A%22interface%20User%20%7B%5Cn%20%20id%3A%20number%3B%5Cn%20%20name%3A%20string%3B%5Cn%20%20email%3A%20string%3B%5Cn%7D%5Cn%5Cnconst%20user%3A%20User%20%3D%20%7B%5Cn%20%20id%3A%201%2C%5Cn%20%20name%3A%20%5C%22Alice%5C%22%2C%5Cn%20%20email%3A%20%5C%22alice%40example.com%5C%22%5Cn%7D%3B%22%7D"
+    ></card>
+    
+    <p>然后是相关的图片说明：</p>
+    
+    <p>
+        <card
+            type="inline"
+            name="image"
+            value="data:%7B%22src%22%3A%22https%3A//example.com/images/user-interface.png%22%2C%22title%22%3A%22%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E6%88%AA%E5%9B%BE%22%7D"
+        ></card>
+    </p>
+    
+    <h2>4. 列表和引用</h2>
+    
+    <h3>4.1 无序列表</h3>
+    <ul>
+        <li>第一项：安装依赖</li>
+        <li>第二项：配置环境</li>
+        <li>第三项：运行测试</li>
+    </ul>
+    
+    <h3>4.2 有序列表</h3>
+    <ol>
+        <li>克隆仓库</li>
+        <li>安装依赖包</li>
+        <li>启动开发服务器</li>
+    </ol>
+    
+    <h3>4.3 引用块</h3>
+    <blockquote>
+        <p>这是一段重要的引用文字。引用可以包含<strong>格式化内容</strong>。</p>
+    </blockquote>
+    
+    <h2>5. 复杂代码块（包含特殊字符）</h2>
+    
+    <card
+        type="inline"
+        name="codeblock"
+        value="data:%7B%22mode%22%3A%22markdown%22%2C%22code%22%3A%22%23%20Markdown%20%E7%A4%BA%E4%BE%8B%5Cn%5Cn%60%60%60python%5Cnprint(%5C%22Hello%5C%22)%5Cn%60%60%60%5Cn%5Cn-%20%E5%88%97%E8%A1%A8%E9%A1%B9%5Cn-%20**%E5%8A%A0%E7%B2%97**%5Cn%22%7D"
+    ></card>
+    
+    <h2>6. 表格测试（标准 HTML）</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>名称</th>
+                <th>类型</th>
+                <th>说明</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>代码块</td>
+                <td>codeblock</td>
+                <td>支持多种语言</td>
+            </tr>
+            <tr>
+                <td>图片</td>
+                <td>image</td>
+                <td>支持 URL 和标题</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>7. 链接测试</h2>
+    
+    <p>访问 <a href="https://www.yuque.com">语雀官网</a> 了解更多信息。</p>
+    
+    <p>这是一个 <a href="https://github.com" target="_blank">GitHub 链接</a>。</p>
+    
+    <h2>8. 特殊场景测试</h2>
+    
+    <h3>8.1 空代码块（边界情况）</h3>
+    <card
+        type="inline"
+        name="codeblock"
+        value="data:%7B%22mode%22%3A%22text%22%2C%22code%22%3A%22%22%7D"
+    ></card>
+    
+    <h3>8.2 纯文本代码块</h3>
+    <card
+        type="inline"
+        name="codeblock"
+        value="data:%7B%22mode%22%3A%22%22%2C%22code%22%3A%22%E8%BF%99%E6%98%AF%E4%B8%80%E6%AE%B5%E7%BA%AF%E6%96%87%E6%9C%AC%5Cn%E6%B2%A1%E6%9C%89%E6%8C%87%E5%AE%9A%E8%AF%AD%E8%A8%80%22%7D"
+    ></card>
+    
+    <h2>9. 结论</h2>
+    
+    <p>本文档测试了语雀编辑器的各种元素转换功能，包括：</p>
+    
+    <ul>
+        <li>✅ 多种编程语言代码块</li>
+        <li>✅ 图片（带标题和不带标题）</li>
+        <li>✅ 标准 Markdown 元素</li>
+        <li>✅ 混合内容</li>
+        <li>✅ 特殊字符处理</li>
+    </ul>
+    
+    <p>所有功能均已成功实现！🎉</p>
+</body>
+</html>
+

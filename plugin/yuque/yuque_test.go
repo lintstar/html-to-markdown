@@ -3,9 +3,9 @@ package yuque
 import (
 	"testing"
 
-	"github.com/JohannesKaufmann/html-to-markdown/v2/converter"
-	"github.com/JohannesKaufmann/html-to-markdown/v2/plugin/base"
-	"github.com/JohannesKaufmann/html-to-markdown/v2/plugin/commonmark"
+	"github.com/lintstar/html-to-markdown/v2/converter"
+	"github.com/lintstar/html-to-markdown/v2/plugin/base"
+	"github.com/lintstar/html-to-markdown/v2/plugin/commonmark"
 )
 
 func TestYuqueCodeBlock(t *testing.T) {

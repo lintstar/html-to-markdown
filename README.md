@@ -215,6 +215,8 @@ These are the plugins located in the [plugin folder](/plugin):
 |                       |                                                                                                    |
 | ConfluenceCodeBlock   | _planned_                                                                                          |
 | ConfluenceAttachments | _planned_                                                                                          |
+|                       |                                                                                                    |
+| Yuque                 | Converts Yuque editor `<card>` tags (codeblock and image) to Markdown                              |
 
 > [!NOTE]  
 > Not all the plugins from v1 are already ported to v2. These will soon be implemented...
